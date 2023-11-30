@@ -39,4 +39,7 @@ Route::get('/all/category',[CategoryController::class,'index'])->name('AllCat');
 
 
 Route::get('/categories', [CategoryController::class, 'index'])->name('AllCat');
+Route::get('/deleteItem', [CategoryController::class, 'delete'])->name('delete');
+Route::get('/retrieve', [CategoryController::class, 'retrieve'])->name('retrieve');
+Route::post('/editItem', [CategoryController::class, 'edit'])->name('edit');
 Route::post('/categories', [CategoryController::class, 'store'])->name('AllCat');
